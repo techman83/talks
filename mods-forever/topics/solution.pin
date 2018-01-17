@@ -63,4 +63,37 @@
 -- [images/response.png]
 # - contributor responds
 # - with feedback
-# - including benefits I hadn't thought of!
+# - benefits I hadn't thought of!
+# - things I didn't know - ckan superset of a netkan
+# - I had a plan!
+-- [images/hookslog.png]
+# - already employing webhooks
+# Workflow
+# - NetKAN gets inflated (indexer or webhook)
+# - Resulting CKAN validated and commited CKAN-meta
+# - GitHub sends WebHook of Changed Files
+# - Webhook checks if FOSS mod
+# - Checks if not already uploaded
+# - Creates new entry, uploads to archive.org
+#
+# What about previous files?
+-- [images/backinflate.png]
+# - Well, this chart of commits/month 2016
+# - I'd built a robot
+-- [images/backinflate_commits.png]
+# - Check all the CKANs without hashes
+# - Randomly Inflated/Mirrored them All
+# - Simultaneously Checked hashed CKANs were mirrored (hashes were being generated before mirroring began)
+-- [text-align=left]
+* 6088 mods mirrored
+* 6476 mods with download hashes
+* 356 mods which don't allow mirriong
+* 16 mods with hashes but dead urls
+* 137 mods which failed to inflate (could be dead url or changed zip)
+# So this is what the bot achieved in 7 days
+# - 6088 mods mirrored
+# - 6476 mods with download hashes
+# - 356 mods which don't allow mirriong
+# - 16 mods with hashes but dead urls
+# - 137 mods which failed to inflate (could be dead url or changed zip)
+# - Things were better than expected!
