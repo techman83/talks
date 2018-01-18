@@ -1,7 +1,7 @@
 -- [images/moarrockets.jpg]
 # - we could add more rockets
-# - before get into, some background
-# - briefly
+# - before get into that, some background
+# - briefly:
 -- [font=monospace 50px][text-align=left]
 {
     "spec_version"   : 1,
@@ -49,6 +49,7 @@
     "x_generated_by": "netkan"
 }
 # - Which is pushed into our Meta data repo and consumed by the CKAN Client
+#
 # solutions
 # - We'd looked at S3 - whilst being sponsored, long term costs a consideration
 # - archive.org had the infrastructure and actively wants software contributions, in particular foss
@@ -68,6 +69,7 @@
 # - I had a plan!
 -- [images/hookslog.png]
 # - already employing webhooks
+#
 # Workflow
 # - NetKAN gets inflated (indexer or webhook)
 # - Resulting CKAN validated and commited CKAN-meta

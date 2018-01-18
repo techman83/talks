@@ -1,5 +1,31 @@
---
-# - stats!!
 -- [images/happyjeb.jpg]
-# - Things learned
+# Things learned
+# - Share your ideas
+# - Even ideas you don't like
+# - Feedback gives
+#   - Different perspectives
+#   - Exceptionally motivating
+# - Don't stress about the edge cases, they're probably way less of a deal than you think
+# - Be preparred to spend an order of magnitude more time not playing the game you're coding for
+# - Archiving all the mods really came in handy when KerbarlStuff disappeared overnight!
+#
+# now stats!!
+-- [images/mods_jan_2018.png]
+# commit chart as of Jan 2018
+-- [text-align=left]
+As of January 18th, 21:02:15 +0800
+* 12271 Total mods indexed
+* 893 Authors
+* 11159 FOSS mods indexed
+* 840 of the 893 Authors have released FOSS mod(s)
+* 11417 Archived mods
+#As of January 18th, 21:02:15 +0800
+#* 12271 Total mods indexed
+#* 893 Authors
+#* 11159 FOSS mods indexed
+#* 840 of the 893 Authors have released FOSS mod(s)
+#* 11417 Archived mods
 -- [images/howdithappen.jpg]
+# Questions?
+#
+# - Stats generated using: gitstats
