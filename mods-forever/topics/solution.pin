@@ -1,6 +1,6 @@
 -- [images/moarrockets.jpg]
 # - we could add more rockets
-# - before get into that, some background
+# - before get into that, some background about CKAN
 # - briefly:
 -- [font=monospace 50px][text-align=left]
 {
@@ -20,9 +20,11 @@
 }
 
 # - We have stub meta data, called a NetKAN
-# - Indexer picks up
-# - Runs every 4 hours and webhooks
-# - Which gets inflated into a CKAN
+# - which contains all the basics to be able to automatically create new metadata
+# - We have regular automated indexing
+# - We also utilise webhooks for the bigger hosting sites
+# - meaning that when an author releases a mod version we have enough detail to genrate
+# - Which gets inflated into a CKAN compatible with our spec
 -- [font=monospace 50px][text-align=left]
 {
     "spec_version": 1,
@@ -48,18 +50,28 @@
     "download_content_type": "application/zip",
     "x_generated_by": "netkan"
 }
-# - Which is pushed into our Meta data repo and consumed by the CKAN Client
+# - A ckan contains detailed information such as
+# - Author
+# - Download location
+# - License
+# - KSP Version compatibility 
+# - and so on
+# - Which is pushed into our Meta data repo to be consumed by the CKAN Client
 #
 # solutions
 # - We'd looked at S3 - whilst being sponsored, long term costs a consideration
 # - archive.org had the infrastructure and actively wants software contributions, in particular foss
 # - archive.org api was straight forward, quickly whipped up integration
 # - but I was stuck
+#  - Spent a lot of time thinking about solution
+#  - Had a lot of ideas
+#  - Didn't really know which path to go down
 # - put it to the team
 -- [images/proposal.png]
 # - The TLDR;
-# - Try to avoid a spec change
-# - or do a spec change
+# - I'd come up with 3 options
+# - 1 involved very little breaking changes
+# - 1 involved potentially breaking changes
 # - and described an option I wasn't in favour of
 -- [images/response.png]
 # - contributor responds
@@ -67,10 +79,17 @@
 # - benefits I hadn't thought of!
 # - things I didn't know - ckan superset of a netkan
 # - I had a plan!
+# - which was
+# - No more manual metadata generation
+# - Change the CKAN spec
+# - Implement hashing into the NetKAN inflator
+# - Create a process to mirror things
+# - mirror all the existing things
+# - so not much really..
 -- [images/hookslog.png]
-# - already employing webhooks
 #
 # Workflow
+# - seeing that we already employing webhooks, this is our workflow
 # - NetKAN gets inflated (indexer or webhook)
 # - Resulting CKAN validated and commited CKAN-meta
 # - GitHub sends WebHook of Changed Files
@@ -80,8 +99,9 @@
 #
 # What about previous files?
 -- [images/backinflate.png]
-# - Well, this chart of commits/month 2016
 # - I'd built a robot
+# - Guess which month of 2016 it ran.
+# - Pause, take a breath.
 -- [images/backinflate_commits.png]
 # - Check all the CKANs without hashes
 # - Randomly Inflated/Mirrored them All
