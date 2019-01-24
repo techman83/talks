@@ -1,0 +1,10 @@
+-- [images/v3.jpg]
+# - So here we are at LCA2019
+# - Having found the right sensor, I thought. How can I make this better?
+# - I know, Over Engineer it!
+# - Behind this badge sits an ECS Cluster, 3 docker containers, deployed via a template, proper domain and LetsEncrypt certificates!
+# - The algorithm also measures quality, displays it visually and most importantly displays it's current state.. be that broken or operating normally!
+-- [images/twitter.jpg]
+# - And to avoid being shadow banned, generates a message describing the measured quality!
+# - It even caters for hugs that aren't quite measurable!
+

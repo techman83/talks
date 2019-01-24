@@ -1,0 +1,15 @@
+#!/usr/bin/pinpoint
+
+[font=Sans 200px]
+[white][text-color=black]
+[shading-opacity=0.0]
+[text-align=center]
+[duration=3]
+
+--
+
+@include <intro.pin>
+@include <v1.pin>
+@include <v2.pin>
+@include <v3.pin>
+@include <closing.pin>
