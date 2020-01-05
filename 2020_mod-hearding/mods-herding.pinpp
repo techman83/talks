@@ -4,11 +4,11 @@
 [white][text-color=black]
 [shading-opacity=0.0]
 [text-align=center]
-[duration=15]
+[duration=30]
 
 --
 
 @include <intro.pin>
-@include <problem.pin>
-@include <solution.pin>
-@include <closing.pin>
+# @include <problem.pin>
+# @include <solution.pin>
+# @include <closing.pin>

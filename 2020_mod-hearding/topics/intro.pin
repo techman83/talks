@@ -1,29 +1,37 @@
-Kerbal Space Program
+Kerbal Space Program:
 A Journey into Mod Metadata Herding
 
 CC-BY
 Leon Wright
 
-GH: @techman83 
-T: @techman_83 
-W: techamn83.me
+GitHub: @techman83 
+Twitter: @techman_83 
+Web: techman83.me
 
 # !!!!! Remember, Talk slower. Everything seems slower than it actually is!
 #
 # Talk about myself since last talk - not too much ;)
-# - Programmer -> DevOps
-#
-  
-#-- [images/loading.png]
-# - Find Audience level of KSP knowledge - Keep your hands up, I'll run through in order
+# - Programmer -> DevOps - talk about journey
+#  - Hired as a programmer, for asterisk automation
+#  - Product Matured, left spare time
+#  - decade of sysadmin + programming lead to automating all the things
+-- [images/remotetech.jpg]
+# - Circling back around
+#  - NetKAN-bot - project I learned to code one
+#  - looking like
+-- [images/moarrockets.jpg]
+# those kerbals seem to be ok with
+# anytime a pr came in
+-- [images/scaredjeb.jpg]
+# getting ahead of myself!
+-- [images/loading.png]
+# - Find Audience level of KSP modding
 #  - Who's heard of KSP
-#  - Who's played it?
-#  - Who's installed a mod?
 #  - Who's used CKAN?
 #  - Anybody modded it? 
 # - Paul Fenwick aka @pjf tweeting about KSP
 # - Promptly buy it and explode my first rocket
 # - We chatted about mods and our severe aversion of managing things by hand
 # - Message from Paul: So I've been writing a mod manager...
--- [images/meowlander.jpg]
+# -- [images/meowlander.jpg]
 # Pause! Take a breath.
