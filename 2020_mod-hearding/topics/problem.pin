@@ -1,13 +1,79 @@
-#-- [images/mods_oct_2014.png]
-# - Project Success!
-# - After the first year indexed around 4500 individual releases
-# - Squad being supportive of the modding community
-# - Squad clear on what modders required to do
-# - mod source code must be publicly available and must have a license.
-# - Result: majority mods F/OSS licensed
-# - we had some problems
-#-- [images/problems.jpg]
-# - mods already disappearing
-# - mods centralise on a few places
-# - dead links
-# - players lagging behind the release for a mod could find they could no longer install it
+-- [images/remotetech.jpg]
+# Project re-written as a full service
+# But back to looking like this
+-- [font=monospace 50px][text-align=left]
+➜  NetKAN-bot git:(master) ✗ ack -f --perl bin lib
+bin/ckan-webhooks
+bin/mirror-ckan
+bin/netkan-indexer
+lib/App/KSP_CKAN.pm
+lib/App/KSP_CKAN/Status.pm
+lib/App/KSP_CKAN/WebHooks/MirrorCKAN.pm
+lib/App/KSP_CKAN/WebHooks/InflateNetKAN.pm
+lib/App/KSP_CKAN/Tools/GitHub.pm
+lib/App/KSP_CKAN/Tools/Http.pm
+lib/App/KSP_CKAN/Tools/Config.pm
+lib/App/KSP_CKAN/Tools/IA.pm
+lib/App/KSP_CKAN/Tools/Git.pm
+lib/App/KSP_CKAN/Tools/NetKAN.pm
+lib/App/KSP_CKAN/Status/NetKAN.pm
+lib/App/KSP_CKAN/DownloadCounts.pm
+lib/App/KSP_CKAN/WebHooks.pm
+lib/App/KSP_CKAN/Roles/Licenses.pm
+lib/App/KSP_CKAN/Roles/FileServices.pm
+lib/App/KSP_CKAN/Roles/Logger.pm
+lib/App/KSP_CKAN/NetKAN.pm
+lib/App/KSP_CKAN/Mirror.pm
+lib/App/KSP_CKAN/Metadata/Ckan.pm
+lib/App/KSP_CKAN/Metadata/NetKAN.pm
+➜  NetKAN-bot git:(master) ✗ ack -f --perl bin lib | xargs -L 1 perltidy --noprofile --delete-pod --mbl=0 --standard-output | wc -l
+2367
+# Complicated, thousands of lines
+# Heavily reliant on complicated links between code
+-- [font=monospace 50px][text-align=left]
+➜  NetKAN-bot git:(master) ✗ ack -f --perl t
+t/lib/App/KSP_CKAN/Test/Licenses.pm
+t/lib/App/KSP_CKAN/Test/FileServices.pm
+t/lib/App/KSP_CKAN/Test/Logger.pm
+t/lib/App/KSP_CKAN/Test/IA.pm
+t/lib/App/KSP_CKAN/Cached.pm
+t/lib/App/KSP_CKAN/Test.pm
+t/bin/cached_api.pl
+t/App/KSP_CKAN/NetKAN_debug.t
+t/App/KSP_CKAN/WebHooks/InflateNetKAN.t
+t/App/KSP_CKAN/Tools/IA.t
+t/App/KSP_CKAN/Tools/Git.t
+t/App/KSP_CKAN/Tools/Config.t
+t/App/KSP_CKAN/Tools/NetKAN.t
+t/App/KSP_CKAN/Tools/Http.t
+t/App/KSP_CKAN/Mirror.t
+t/App/KSP_CKAN/Status.t
+t/App/KSP_CKAN/NetKAN.t
+t/App/KSP_CKAN/Roles/FileServices.t
+t/App/KSP_CKAN/Roles/Logger.t
+t/App/KSP_CKAN/Roles/Licenses.t
+t/App/KSP_CKAN/Metadata/NetKAN.t
+t/App/KSP_CKAN/Metadata/Ckan.t
+➜  NetKAN-bot git:(master) ✗ ack -f --perl t | xargs -L 1 perltidy --noprofile --delete-pod --mbl=0 --standard-output | wc -l
+1533
+# well tested complication
+# test also prone to random failure
+# it had another drawback
+-- [images/eek.png]
+# I was the only one that understood
+# Any pr involved me
+# - Remembering how it worked
+# - Remembering the tests that were environment dependented
+# - Fixing the gotchas I understood
+# - hand building deployment
+# - hand deploying it
+# - Fixing whatever broke that I forgot
+-- [images/moarrockets.jpg]
+-- [images/scaredjeb.jpg]
+# whilst it had been reliable for years
+# the service was starting to look like
+-- [images/sadrocket.jpg]
+# indexing runs once every 8 hours
+# random outages
+# everything depended on me
+-- [images/scaredjeb.jpg]

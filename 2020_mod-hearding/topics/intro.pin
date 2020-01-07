@@ -15,23 +15,100 @@ Web: techman83.me
 #  - Hired as a programmer, for asterisk automation
 #  - Product Matured, left spare time
 #  - decade of sysadmin + programming lead to automating all the things
--- [images/remotetech.jpg]
 # - Circling back around
+#  - Last time I spoke on mod archiving
+#   - this time infrastrusture
+#   - challenges running a project used by non devs
 #  - NetKAN-bot - project I learned to code one
-#  - looking like
+#  - which was looking like
+-- [images/remotetech.jpg]
+# anytime a pr came in...
 -- [images/moarrockets.jpg]
-# those kerbals seem to be ok with
-# anytime a pr came in
+# those kerbals seem to be ok with it
+# but me..
 -- [images/scaredjeb.jpg]
 # getting ahead of myself!
 -- [images/loading.png]
-# - Find Audience level of KSP modding
-#  - Who's heard of KSP
-#  - Who's used CKAN?
-#  - Anybody modded it? 
-# - Paul Fenwick aka @pjf tweeting about KSP
-# - Promptly buy it and explode my first rocket
-# - We chatted about mods and our severe aversion of managing things by hand
-# - Message from Paul: So I've been writing a mod manager...
-# -- [images/meowlander.jpg]
+# Background
+# - What is CKAN (MM for pop RS sim KSP)
+# - Bit of History
+#  - CKAN take advantage of rich metadata
+#  - Paul Fenwick + Dwayne Bent
+#   - Created a framework + generator called netkan
+-- [font=monospace 50px][text-align=left]
+{
+    "spec_version"   : 1,
+    "identifier"     : "DogeCoinFlag",
+    "name"           : "Dogecoin Flag",
+    "abstract"       : "Such flag. Very currency. Wow.",
+    "description"    : "Adorn your craft with your favourite cryptocurrency. To the mün!",
+    "$kref"          : "#/ckan/github/pjf/DogeCoinFlag",
+    "ksp_version"    : "any",
+    "comment"        : "flagmod",
+    "license"        : "CC-BY",
+    "author"         : "daviddwk",
+    "resources"      : {
+        "homepage"   : "https://www.reddit.com/r/dogecoin/comments/1tdlgg/i_made_a_more_accurate_dogecoin_and_a_ksp_flag/"
+    }
+}
+# stub metadata
+-- [font=monospace 50px][text-align=left]
+{
+    "spec_version": 1,
+    "comment": "flagmod",
+    "identifier": "DogeCoinFlag",
+    "name": "Dogecoin Flag",
+    "abstract": "Such flag. Very currency. Wow.",
+    "description": "Adorn your craft with your favourite cryptocurrency. To the mün!",
+    "author": "daviddwk",
+    "license": "CC-BY",
+    "resources": {
+        "homepage": "https://www.reddit.com/r/dogecoin/comments/1tdlgg/i_made_a_more_accurate_dogecoin_and_a_ksp_flag/",
+        "repository": "https://github.com/pjf/DogeCoinFlag"
+    },
+    "version": "v1.02",
+    "ksp_version": "any",
+    "download": "https://github.com/pjf/DogeCoinFlag/releases/download/v1.02/DogeCoinFlag-1.02.zip",
+    "download_size": 53359,
+    "download_hash": {
+        "sha1": "BFB78381B5565E1AC7E9B2EB9C65B76EF7F6DF71",
+        "sha256": "CF70CE1F988F908FB9CF641C1E47CDA2A30D5AD951A4811A5C0C5D30F6FD3BA9"
+    },
+    "download_content_type": "application/zip",
+    "x_generated_by": "netkan"
+}
+# produce full meta data
+# I inheritted a crude python bash script generator existed automate netkan
+# back to me being scared!
+-- [images/scaredjeb.jpg]
+#  - Perl Script thin wrapper
+#  - Rush move to AWS
+#  - wake up oops - understated reaction
+-- [images/oops.png]
+-- [font=monospace 50px][text-align=left]
+2080 files changed, 65509 deletions(-)
+delete mode 100644 AAResourceTanks/AAResourceTanks-0.2.ckan
+delete mode 100644 AAResourceTanks/AAResourceTanks-0.3.ckan
+delete mode 100644 ADIOS/ADIOS-V.09.ckan
+delete mode 100644 ADIOS/ADIOS-V.10.ckan
+delete mode 100644 ADIOS/ADIOS-V.11.ckan
+delete mode 100644 ADIOS/ADIOS-V.12.ckan
+delete mode 100644 ADIOS/ADIOS-V.13.ckan
+delete mode 100644 ADIOS/ADIOS-V.14.ckan
+delete mode 100644 ADIOS/ADIOS-V13.1.ckan
+delete mode 100644 AGExt/AGExt-1.20.ckan
+delete mode 100644 AGExt/AGExt-1.21a.ckan
+delete mode 100644 AGExt/AGExt-1.22.ckan
+delete mode 100644 AGExt/AGExt-1.22a.ckan
+delete mode 100644 AGExt/AGExt-1.22b.ckan
+delete mode 100644 AGExt/AGExt-1.23.ckan
+delete mode 100644 AGExt/AGExt-1.23a.ckan
+delete mode 100644 AGExt/AGExt-1.23c.ckan
+delete mode 100644 AGExt/AGExt-1.24.ckan
+delete mode 100644 AGExt/AGExt-1.24a.ckan
+delete mode 100644 AGExt/AGExt-1.25.ckan
+delete mode 100644 AGExt/AGExt-1.25a.ckan
+delete mode 100644 AGExt/AGExt-1.25d.ckan
+delete mode 100644 AGExt/AGExt-1.26.ckan
+... and so many more!
 # Pause! Take a breath.
