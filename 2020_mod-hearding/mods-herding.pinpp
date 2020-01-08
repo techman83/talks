@@ -10,5 +10,5 @@
 
 @include <intro.pin>
 @include <problem.pin>
-# @include <solution.pin>
+@include <solution.pin>
 # @include <closing.pin>

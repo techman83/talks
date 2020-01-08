@@ -68,6 +68,7 @@ t/App/KSP_CKAN/Metadata/Ckan.t
 # - hand building deployment
 # - hand deploying it
 # - Fixing whatever broke that I forgot
+# and well
 -- [images/moarrockets.jpg]
 -- [images/scaredjeb.jpg]
 # whilst it had been reliable for years
@@ -75,5 +76,6 @@ t/App/KSP_CKAN/Metadata/Ckan.t
 -- [images/sadrocket.jpg]
 # indexing runs once every 8 hours
 # random outages
-# everything depended on me
+# operationally _everything_ depended on me
 -- [images/scaredjeb.jpg]
+# Obviously there was a solution!
