@@ -1,6 +1,22 @@
--- [images/remotetech.jpg]
+-- [text-align=left]
+Things the service covered
+  * Convert Stub Metadata (.netkan) to Full (.ckan) via netkan utility
+  * Detecting/committing  metadata changes
+  * Producing metadata status for errors
+  * Creating branches/pull requests for mods with special requirements
+  * Mod Popularity Stats
+  * Support Automation (robots closing stale issues)
+  * Webhooks for on Demand Inflation requests
+  * Webhooks for Mirroring to Archive.org
 # Project re-written as a full service
+# - Spinning up mono thousands of times is compute expensive
+# - Deployments had to wait for 45 minute indexing runs
+#   - Invariable when I had time was during a run
+# - It was a super cpu + io heavy operation
+# - It was mostly a collection of cron jobs and a small webserver
+# - Hand built instance, distro nearing EoL
 # But back to looking like this
+-- [images/remotetech.jpg]
 -- [font=monospace 50px][text-align=left]
 ➜  NetKAN-bot git:(master) ✗ ack -f --perl bin lib
 bin/ckan-webhooks

@@ -2,33 +2,81 @@
 # Containers!
 # But more seriously
 -- [text-align=left]
-Things the service covered
-  * Convert Stub Metadata (.netkan) to Full (.ckan) via netkan utility
-  * Detecting/committing  metadata changes
-  * Producing metadata status for errors
-  * Creating branches/pull requests for mods with special requirements
-  * Webhooks for on Demand Inflation requests
-  * Webhooks for Mirroring to Archive.org
-
-# Things of note
-# - Spinning up mono thousands of times is compute expensive
-# - Deployments had to wait for 45 minute indexing runs
-# - It was mostly a collection of cron jobs and a small webserver
--- [text-align=left]
 New Design
 
-Inflator
+Inflator (Mono/C# Runtime)
   * Convert Stub Metadata (.netkan) to Full (.ckan)
 
-Indexer
+Indexer (Python)
   * Detecting/committing  metadata changes
   * Producing metadata status for errors
   * Creating branches/pull requests for mods with special requirements
 
-Scheduler
+Scheduler (Python)
   * Interval runs for non-webhooks based netkans
   * Daily runs to catch missed webhooks and changes to netkan
 
-Webhooks
+Webhooks (Python/Perl Legacy/Nginx)
   * On Demand Inflation
   * Mirroring to Archive.org
+
+Support Automation
+  * Automatically Close Stale Issues
+
+Infrastructure Automation
+  * Mod Download Cache Management
+  * LetsEncrypt Certificates
+
+# Discreet services in a collection of containers
+# - Inflator
+# - Indexer
+# - Webhooks
+# Scheduled Tasks
+# - Scheduled indexing runs
+# - Cache cleaning
+# Benefits
+# - Changes can be more focused
+# - Logical seperation
+# - Inflator can cache expensive operations
+
+-- [text-align=left]
+
+AWS Services
+
+Simple Queue Service
+  * Scheduling Inflations for the Inflator
+  * Indexer processes Inflations produced by the Inflator
+
+Elastic Container Services
+  * Automatic Failure Management
+  * Deployment Automation
+  * Container Variables + Secrets
+
+EC2
+  * Cheap Compute
+  * Access to Stats to keep within limits
+
+Systems Manager
+  * Secrets Storage + Management
+
+Dynamo DB
+  * Mod Status Storage
+
+S3
+  * Status Site Hosting
+
+CloudFormation (via Troposhpere)
+  * Infrastructure as Code
+
+# Inertia Driver to stay with AWS
+# But
+# - Free Tier
+#   - SQS 1 million/month, we use less
+#   - DynamoDB 25 Read/Write credits + 25GB Storage
+#   - Systems Manager
+# - Automation Tools
+#   - ECS + tight integration
+#   - CloudFormation
+# And it's my day job!
+# Our current spend ~$30AUD, mostly EC2
+# Redesign reduced costs by around $10/m
