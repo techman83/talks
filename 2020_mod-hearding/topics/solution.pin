@@ -2,6 +2,19 @@
 # Containers!
 # But more seriously
 -- [text-align=left]
+Design Goals
+
+ * Decouple services as much as possible
+ * Reduce code complexity
+ * Make services self healing
+ * Empower the rest of the team
+ * Remove me as a bottleneck
+
+# Speak breifly about the goals
+# tightly coupled + complexity big barriers
+# service hadn't really seen any changes in several years
+
+-- [text-align=left]
 New Design
 
 Inflator (Mono/C# Runtime)
@@ -78,5 +91,3 @@ CloudFormation (via Troposhpere)
 #   - ECS + tight integration
 #   - CloudFormation
 # And it's my day job!
-# Our current spend ~$30AUD, mostly EC2
-# Redesign reduced costs by around $10/m

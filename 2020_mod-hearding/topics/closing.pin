@@ -1,22 +1,56 @@
-#-- [images/happyjeb.jpg]
-# Things learned
+-- [images/happyjeb.jpg]
+# Me now!
+# Things that went well
+# - Decoupling 
+#   - made writing discreet services easy
+#   - trouble shooting way easier
+#   - writing new services easier
+# All non cost related services no automatically deploy on build!
+# Redesign reduced costs by around $10/m
 #
-# now stats!!
-#-- [images/mods_jan_2018.png]
-# file count as of Jan 2018 - Update these
+# Things Not Expected
+-- [images/contributors.png]
+# - Huge contributions
+# Thanks HebaruSan/DasSkellet
+# - Reduced costs side/side running
+# - New Features hadn't thought of
+# - 10 fold efficiency gain
+#  - Index runs now down to 15 minutes
+#  - CPU Credit Usage single digits
+#  - Disk burst current bottleneck (bug)
+# - Now more time reviewing code
+# Things I found hard
+#
+-- [images/hard.jpg]
+# - Learning how to harness the teams energy
+# - Not getting overwhelmed by the teams energy
+# - Disagreeing
+# - Encouraging Iteration over big features
+# - Communicating design choices relating to infrastructure choices
+# - Being ok with being wrong!
+# 
+-- [images/where.png]
+# Where now?
+# - Finish moving legacy services
+# - Fix bug in indexer
+# - Come up for solutions for remaining PRs
+# - Play some KSP? 
+#-- [images/mods_jan_2020.png]
+# file count as of Jan 2020 - Update these
 -- [text-align=left]
 As of January 18th, 21:02:15 +0800
-* 12271 Total mods indexed
-* 893 Authors
-* 11159 FOSS mods indexed
-* 840 of the 893 Authors have released FOSS mod(s)
-* 11417 Archived mods
-#As of January 18th, 21:02:15 +0800
-#* 12271 Total mods indexed
-#* 893 Authors
-#* 11159 FOSS mods indexed
-#* 840 of the 893 Authors have released FOSS mod(s)
-#* 11417 Archived mods
+* 18,656 Total mods avaible
+* 1072 Authors
+* 17,046 FOSS Mods
+* 1023 of the 1072 Authors have released FOSS mod(s)
+* 17,638 Archived mods
+#As of January 10th, 17:02:15 +0800
+#Increase since this time 2018
+#* 6385 individual mods
+#* 179 Authors
+#* 5887 FOSS mods
+#* 183 authors with FOSS Mods
+#* 6221 Archived mods
 #-- [images/howdithappen.jpg]
 # Questions?
 #
