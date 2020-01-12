@@ -1,5 +1,6 @@
 -- [images/containers.jpg]
 # Containers!
+# Long Pause, take a breath
 # But more seriously
 -- [text-align=left]
 Design Goals
@@ -10,13 +11,16 @@ Design Goals
  * Empower the rest of the team
  * Remove me as a bottleneck
 
+# Having more experience designing services
+# Something new in mind
+#
 # Speak breifly about the goals
 # - Decouple
 # - Reduce code complexity
 # - Make services self healing
 # - Empower the rest of the team
 # - Remove me as a bottleneck
-#
+# pause
 -- [text-align=left]
 New Design
 
@@ -43,6 +47,8 @@ Infrastructure Automation
   * Mod Download Cache Management
   * LetsEncrypt Certificates
 
+# New design involved
+#
 # Discreet services in a collection of containers
 # - Inflator
 # - Indexer

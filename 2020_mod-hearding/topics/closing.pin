@@ -10,32 +10,63 @@
 #
 # Things Not Expected
 -- [images/contributors.png]
-# - Huge contributions
-# Thanks HebaruSan/DasSkellet
-# - New Features hadn't thought of
+# Huge contributions from the team
+#  - Code
+#  - Design Discussions 
+#  - Support
+#
+# Big shoutout to HebaruSan and DasSkellet
+#
+# - They also thought of new and wrote new features like
+#   - Automatically marking mods without releases for a few years to be skipped
+#   - Automatic handling of new versions appearing as old
+#     - be that from version mistakes or unvonventional version schemes
+#
 # - 10 fold efficiency gain
-#  - Index runs now down to 15 minutes
-#  - CPU Credit Usage single digits
-#  - Disk burst current bottleneck (bug)
-# - Now more time reviewing code
+#  - IOPs from 60 million/m down to 6 million
+#  - Index runs now down to 15 minutes from 45 minutes
+#  - CPU Credit Usage single digits, instead of around 40
+#  - Run frequency from once every 8 hours, to every 2 hours
+#
+#  - Actually disk burst current bottleneck (bug)
+#
+# - Being a code reviewer rather than code writer
+#
 # Things I found hard
 #
 -- [images/hard.jpg]
 # - Learning how to harness the teams energy
-# - Not getting overwhelmed by the teams energy
+# - Following on, Not getting overwhelmed by the teams energy
+#
 # - Explaining a Design mostly lived in my head
-# - Encouraging Iteration over big features
+#   As I've been running service for nearly 5 years - lot of knowledge
+#
 # - Communicating design choices relating to infrastructure choices
-# - Disagreeing
+#   Intrisinc understanding
+#
+# - Encouraging Iteration over big features
+#   The main client gets released often, but it's still feature release
+#   Which is not a problem we face running a service with automated deployments
+#
+# - Disagreeing - Robust discussions
+#
 # - Being ok with being wrong!
 # 
 -- [images/where.png]
 # Where now?
 # - Finish moving legacy services
-# - Fix file handle bug in indexer and ramp up indexing
+#
+# - Fix file handle bug in indexer
+#   Which is preventing us from ramping up to indexing every 30 minutes 
+#
 # - Come up for solutions for remaining PRs
+#
 # - Play some KSP? 
+-- [images/playtime.png]
+# pause for audience read
 # 
+# - Yes that is a screenshot I took yesterday
+#
 # Now some stats!
 -- [text-align=left]
 As of January 10th, 17:02:15 +0800

@@ -11,18 +11,19 @@ Web: techman83.me
 # !!!!! Remember, Talk slower. Everything seems slower than it actually is!
 #
 # Talk about myself since last talk - not too much ;)
-# - Programmer -> DevOps - talk about journey
+# - Thanks for indtroducing me
+# -  Leon Wright, DevOps Engineer - talk about journey
 #  - Hired as a programmer, for asterisk automation
 #  - Product Matured, left spare time
 #  - decade of sysadmin + programming, DevOps was a natural progression
 # - Circling back around
 #  - Last time I spoke on mod archiving
-#   - this time infrastrusture
-#   - challenges running a project used by non devs
+#  - this time infrastrusture
 # And
-#  - The project I learned to code on NetKAN-bot
+#  - well the project I learned to code on
 #  - which was looking like
 -- [images/remotetech.jpg]
+# but with more duct tape
 # and anytime a pr came in...
 -- [images/moarrockets.jpg]
 # those kerbals seem to be ok with it
@@ -34,14 +35,19 @@ Web: techman83.me
 # What is CKAN 
 # - Comprehensive  Kerbal Archive Network
 # - MM for pop RS sim KSP
+# - With somewhere in the realms of 100,000 users
+# - and we're nearly 1500 individual mods
 -- [images/orbital_mechanics.png]
+# I think I'm still on the left of that graph somehwere
 # pause
-# - And a source of rich metadata about mods + their relationships
 # Some project details
-# - The CKAN project came about in late 2015 as a Result of Paul Fenwick's frustration of hand managing mods 
+# - The CKAN project came about in late 2014 as a Result of Paul Fenwick's 
+#   frustration of hand managing mods 
 # - The primary focus being a rich set of metadata, heavily insired by apt
+# - and a reference implementation of a client to consume that metadata for MM
 # 
-# Mostly talking automation, netkan, our tool that takes meta data like
+#  For me mostly talking automating, netkan
+#  our tool that takes meta data like
 -- [font=monospace 50px][text-align=left]
 {
     "spec_version"   : 1,
@@ -95,7 +101,7 @@ Web: techman83.me
 # it worked and it was probably written in a hurry, but
 # back to me being scared!
 -- [images/scaredjeb.jpg]
-#  - I replaced it Perl Script thin wrapper
+#  - I replaced it Perl Script that wrapped netkan
 #  - But we had rush move to AWS as our current infra
 #  - All was well initially, but
 #  - wake up oops it had deleted half the metadata - understated reaction dbent

@@ -99,7 +99,11 @@ t/App/KSP_CKAN/Metadata/Ckan.t
 # and it was kinda
 -- [images/sadrocket.jpg]
 # indexing runs once every 8 hours
-# random outages
-# operationally _everything_ depended on me
+# - due to credit usage
+# random outages like
+# - hitting a new compute threshold
+# - git repo corruption
+# _everything_ depended on me
 -- [images/scaredjeb.jpg]
+# pause
 # Obviously there was a solution!
