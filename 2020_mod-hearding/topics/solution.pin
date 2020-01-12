@@ -11,9 +11,12 @@ Design Goals
  * Remove me as a bottleneck
 
 # Speak breifly about the goals
-# tightly coupled + complexity big barriers
-# service hadn't really seen any changes in several years
-
+# - Decouple
+# - Reduce code complexity
+# - Make services self healing
+# - Empower the rest of the team
+# - Remove me as a bottleneck
+#
 -- [text-align=left]
 New Design
 
@@ -47,11 +50,11 @@ Infrastructure Automation
 # Scheduled Tasks
 # - Scheduled indexing runs
 # - Cache cleaning
+# - Support automation
 # Benefits
 # - Changes can be more focused
 # - Logical seperation
 # - Inflator can cache expensive operations
-
 -- [text-align=left]
 
 AWS Services

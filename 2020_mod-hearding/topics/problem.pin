@@ -8,15 +8,21 @@ Things the service covered
   * Support Automation (robots closing stale issues)
   * Webhooks for on Demand Inflation requests
   * Webhooks for Mirroring to Archive.org
-# Project re-written as a full service
+# Details
+# - Covered all the inflating of metadata
+# - Tracking error status
+# - Webhooks
+# - Support automation
+# - Mod Health Tracking
+# Issues 
 # - Spinning up mono thousands of times is compute expensive
 # - Deployments had to wait for 45 minute indexing runs
 #   - Invariable when I had time was during a run
-# - It was a super cpu + io heavy operation
 # - It was mostly a collection of cron jobs and a small webserver
 # - Hand built instance, distro nearing EoL
-# But back to looking like this
+# And well
 -- [images/remotetech.jpg]
+# pause
 -- [font=monospace 50px][text-align=left]
 ➜  NetKAN-bot git:(master) ✗ ack -f --perl bin lib
 bin/ckan-webhooks
@@ -44,8 +50,8 @@ lib/App/KSP_CKAN/Metadata/Ckan.pm
 lib/App/KSP_CKAN/Metadata/NetKAN.pm
 ➜  NetKAN-bot git:(master) ✗ ack -f --perl bin lib | xargs -L 1 perltidy --noprofile --delete-pod --mbl=0 --standard-output | wc -l
 2367
-# Complicated, thousands of lines
-# Heavily reliant on complicated links between code
+# There was a lot of code, over 2000 lines
+# The code was very dependent on assumptions elsewhere in the codebase
 -- [font=monospace 50px][text-align=left]
 ➜  NetKAN-bot git:(master) ✗ ack -f --perl t
 t/lib/App/KSP_CKAN/Test/Licenses.pm
@@ -72,8 +78,8 @@ t/App/KSP_CKAN/Metadata/NetKAN.t
 t/App/KSP_CKAN/Metadata/Ckan.t
 ➜  NetKAN-bot git:(master) ✗ ack -f --perl t | xargs -L 1 perltidy --noprofile --delete-pod --mbl=0 --standard-output | wc -l
 1533
-# well tested complication
-# test also prone to random failure
+# but it was well tested complication
+# just that the tests also prone to random failure
 # it had another drawback
 -- [images/eek.png]
 # I was the only one that understood
@@ -86,9 +92,11 @@ t/App/KSP_CKAN/Metadata/Ckan.t
 # - Fixing whatever broke that I forgot
 # and well
 -- [images/moarrockets.jpg]
+# pause
 -- [images/scaredjeb.jpg]
 # whilst it had been reliable for years
-# the service was starting to look like
+# the service had stagnated
+# and it was kinda
 -- [images/sadrocket.jpg]
 # indexing runs once every 8 hours
 # random outages

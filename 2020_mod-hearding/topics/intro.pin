@@ -14,15 +14,16 @@ Web: techman83.me
 # - Programmer -> DevOps - talk about journey
 #  - Hired as a programmer, for asterisk automation
 #  - Product Matured, left spare time
-#  - decade of sysadmin + programming lead to automating all the things
+#  - decade of sysadmin + programming, DevOps was a natural progression
 # - Circling back around
 #  - Last time I spoke on mod archiving
 #   - this time infrastrusture
 #   - challenges running a project used by non devs
-#  - NetKAN-bot - project I learned to code one
+# And
+#  - The project I learned to code on NetKAN-bot
 #  - which was looking like
 -- [images/remotetech.jpg]
-# anytime a pr came in...
+# and anytime a pr came in...
 -- [images/moarrockets.jpg]
 # those kerbals seem to be ok with it
 # but me..
@@ -30,11 +31,17 @@ Web: techman83.me
 # getting ahead of myself!
 -- [images/loading.png]
 # Background
-# - What is CKAN (MM for pop RS sim KSP)
-# - Bit of History
-#  - CKAN take advantage of rich metadata
-#  - Paul Fenwick + Dwayne Bent
-#   - Created a framework + generator called netkan
+# What is CKAN 
+# - Comprehensive  Kerbal Archive Network
+# - MM for pop RS sim KSP
+-- [images/orbital_mechanics.png]
+# pause
+# - And a source of rich metadata about mods + their relationships
+# Some project details
+# - The CKAN project came about in late 2015 as a Result of Paul Fenwick's frustration of hand managing mods 
+# - The primary focus being a rich set of metadata, heavily insired by apt
+# 
+# Mostly talking automation, netkan, our tool that takes meta data like
 -- [font=monospace 50px][text-align=left]
 {
     "spec_version"   : 1,
@@ -51,7 +58,7 @@ Web: techman83.me
         "homepage"   : "https://www.reddit.com/r/dogecoin/comments/1tdlgg/i_made_a_more_accurate_dogecoin_and_a_ksp_flag/"
     }
 }
-# stub metadata
+# and turns it into something like this
 -- [font=monospace 50px][text-align=left]
 {
     "spec_version": 1,
@@ -77,14 +84,23 @@ Web: techman83.me
     "download_content_type": "application/zip",
     "x_generated_by": "netkan"
 }
-# produce full meta data
-# I inheritted a crude python bash script generator existed automate netkan
+# Which covers
+# - data about it 
+# - version compability
+# - where it's hosted
+# - licenses
+# - etc
+# 
+# The automation when I came along was a python script, echo'd shell commands
+# it worked and it was probably written in a hurry, but
 # back to me being scared!
 -- [images/scaredjeb.jpg]
-#  - Perl Script thin wrapper
-#  - Rush move to AWS
-#  - wake up oops - understated reaction
+#  - I replaced it Perl Script thin wrapper
+#  - But we had rush move to AWS as our current infra
+#  - All was well initially, but
+#  - wake up oops it had deleted half the metadata - understated reaction dbent
 -- [images/oops.png]
+# pause
 -- [font=monospace 50px][text-align=left]
 2080 files changed, 65509 deletions(-)
 delete mode 100644 AAResourceTanks/AAResourceTanks-0.2.ckan
@@ -111,4 +127,10 @@ delete mode 100644 AGExt/AGExt-1.25a.ckan
 delete mode 100644 AGExt/AGExt-1.25d.ckan
 delete mode 100644 AGExt/AGExt-1.26.ckan
 ... and so many more!
+# Fortunately reverted commit
+# Made some adjustments
+# and put it back into service
+#
 # Pause! Take a breath.
+# Fast forward to mid last year
+# the seervice had gone from a script, to a full service
