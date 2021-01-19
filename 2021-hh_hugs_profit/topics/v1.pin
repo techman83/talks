@@ -1,39 +1,48 @@
 -- [images/v1-first.jpg]
-# My first attempt involved a Sharp GP2Y0A21YK0F IR Range Sensor
-# However integrating with it was well beyond my limited arduino skills at the time
+# My first attempt involved shoving an ESP8266 through the holder, stabbing a bunch of holes in my fingers in the process
+# and a Sharp IR Range Sensor (GP1Y0A21YK0F)
+# Whilst integrating with it was well beyond my skills at the time
 # I did however attend Alastair D'Silva's 'Automate your home with MQTT' tutorial
-
--- [images/v1-parts.jpg]
 # Which came with a whole bag of goodies!
 
--- [images/v1.jpg]
-# So with a bit of duct tape, an ESP8266, an Infra red switch and some freetronics freepixels, hug detector v1 was born
+-- [images/v1-parts.jpg]
+# *pause* *breath* *slow down*
 
 -- [images/v1-pillowhug.png]
-# Now one thing I learned on, a pillow at 1am in the morning
+# Quick tangent, whilst writing the initial code, I learned whilst hugging a pillow in my dorm at 1am
 # because waking up a delegate for a hug seemed like a bad idea
 # hugging becomes intimate extremely fast, somewhere between 700 and 1000ms in fact.
 
--- [font=monospace 50px][text-align=left]
-for(i = 0; i <= NUM_LEDS; i++) {
-    leds[i] = CRGB::Red;
-    leds[i].maximizeBrightness();
-    FastLED.show();
-}
+-- [images/v1.jpg]
+# After visiting LT at the Front desk, who seemed quite perplexed at my request for an extra badge holder
+# Wiring up a binary IR switch and a couple of Freepixels from Freetronics
+# Version 1 was born!
+# But it kinda lost its state every time I got a hug
+# After bumping into Angus Gratton from Expressif, he was intrigued
+# So brought up my GitHub repo on my phone and showed him
 
-# Can you see the bug?
-# I couldn't!
-# Bumped into Angus Gratton, who was intrigued by the badge
-# "Can I take a look" - Browses code, oh, I see it!
+-- [font=monospace 50px][text-align=left][no-markup]
 
--- [font=monospace 50px][text-align=left]
-for(i = 0; i < NUM_LEDS; i++) {
-    leds[i] = CRGB::Red;
-    leds[i].maximizeBrightness();
-    FastLED.show();
-}
+    for(i = 0; i <= NUM_LEDS; i++) {
+        leds[i] = CRGB::Red;
+        leds[i].maximizeBrightness();
+        FastLED.show();
+    }
 
-# Turns out trying to iterate pass the end of an array and corrupting the memory.
+# Can you see the bug? I couldn't!
+# After a bit of a skim, Angus noted I'd tripped up on a trap for young players
+
+-- [font=monospace 50px][text-align=left][no-markup]
+    for(i = 0; i < NUM_LEDS; i++) {
+        leds[i] = CRGB::Red;
+        leds[i].maximizeBrightness();
+        FastLED.show();
+    }
+
+# Turns out my last minute the code for my pretty lights
+# trying to iterate pass the end of an array corrupts your memory
+
+# TALK MORE ON THIS STUFF FROM HERE
 
 # - This badge whilst incredibly unreliable, generated interactions with an ease that I didn't even think was possible
 # - along with an energy and joy that I didn't expect at all
