@@ -1,11 +1,35 @@
--- [images/v3.jpg]
-# *speed up!
-# - So here we are at LCA2019
-# - I thought. How can I make this better?
-# - I know, Over Engineer it!
-# - Behind this badge sits an ECS Cluster, 3 docker containers, proper domain and LetsEncrypt certificates!
-# - The algorithm also measures quality, displays it visually and more importantly displays it's current state.. be that broken or operating normally!
--- [images/twitter.jpg]
-# - And to avoid being shadow banned, hug quality descriptions are generated
-# - It even caters for hugs that aren't quite measurable!
+-- [images/v3-packing.jpg]
+# LCA2019 @ Christchurch, packing to create the badge was getting serious
+# I'm still kinda surprised there weren't more questions asked about the
+# quantity of LiPo cells in my carry on for an international Flight
+# I did check, I was under the max allowed, just.
 
+-- [images/v3-construction.jpg]
+# Not only packing, construction was serious too!
+# *pause* *breath*
+
+-- [images/v3.jpg]
+# With not much I wanted to change on the hardware front,
+# I wanted to address the infrastructure behind the badge.
+# So with a good amount of AWS DevOps experience under my belt
+# what better opportunity than to over engineer this thing?
+
+# Behind the badge sat an
+# - ECS Cluster
+# - 3 docker containers 
+#   - MQTT for message transport
+#   - The Hug Bot
+#   - Badge Heartbeat service - suggested by another delegate to help see when there were problems
+#  - Proper hug domain and LetsEncrypt SSL certificates!
+# I also managed to add quality checking to hug algorithm!
+
+-- [images/v3-twitter.jpg]
+# It successfully prevented my account being shadow banned
+# And for the shy huggers among us, allowed them to game things
+# to get a better score!
+
+-- [images/v3-fail.jpg]
+# Unfortunately, I wasn't very organised and none of my sensors
+# arrived before I left, so I had a lot of trouble with broken
+# solder pads
+# *pause* *breath*

@@ -1,10 +1,21 @@
 -- [images/v4.jpg]
-# - So here we are at LCA2019
-# - I thought. How can I make this better?
-# - I know, Over Engineer it!
-# - Behind this badge sits an ECS Cluster, 3 docker containers, proper domain and LetsEncrypt certificates!
-# - The algorithm also measures quality, displays it visually and more importantly displays it's current state.. be that broken or operating normally!
--- [images/twitter.jpg]
-# - And to avoid being shadow banned, hug quality descriptions are generated
-# - It even caters for hugs that aren't quite measurable!
+# LCA2020 on the Gold Coast, I didn't get my badge built
+# as quickly as I would have hoped, between procrastinating Games miniconf talk
+# prep redoing the DevOps for the infrastructure and actually writing it, meant I had
+# to leave quite a mess and I stayed in accommodation that was to be cleaned in my absence, 
+# I thought it best to leave a note..
 
+-- [images/v4-nothing_dangerous.jpg]
+# *pause* *breathe*
+
+-- [images/v4-sensors.jpg]
+# I didn't take a lot of photos, but all my 
+# sensors for LCA2019 did eventually arrive
+# I still have enough for like 8 conferences!
+
+-- [images/v4-lightup.jpg]
+# I also changed up the visual feedback, the heart on the previous badge
+# was cool and all, but it didn't give immediate feedback.
+# This was no longer a problem, I'd wondered if the LiPo and short strip
+# was going to be bright enough, but as you can see, it generated quite
+# the halo!

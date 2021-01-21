@@ -1,5 +1,34 @@
 -- [images/v2.jpg]
-# - After the success of version one, I decided hardware relibility needed to happen!
-# - So armed with a Time of Flight sensor and the new ESP32, version 2 was built
-# - It had an improved algorithm
-# - and it proved to be so successful that twitter shadow banned my account!
+# Sydney LCA2018 rolled around, this time hardware reliability was the plan
+# Expressif had recently released the ESP32
+# Purchased a bunch of VL6180X "Time of Flight" Sensor
+# And the first iteration of my "Hug Algorithm"
+
+-- [images/v2-charging.jpg]
+# Most ESP32 dev boards have charge controllers
+# Which meant I could lose the USB cable and carry a battery!
+
+-- [images/v2-uhoh.png]
+# Unfortunately it worked a little too well!
+
+# *pause*
+
+# fortunately, it wasn't a joyless person, rather an upset twitter algorithm
+# my twitter account did recover later that day after actually tweeting something
+# other than hugs!
+
+-- [images/v2-adam-michael.jpg]
+
+# Post conference I attended Brain Candy Live and
+# sprung for the 'Meet and Greet', Getting to Meet
+# Adam Savage and Michael 'vsauce' Stevens after the
+# show, which was an incredible experience! Adam was
+# very interested in the badge and had many questions!
+
+# yes, I did get a hug!
+
+-- [images/v2-adam_michael_tweets.png]
+
+# *pause* *breath*
+
+

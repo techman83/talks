@@ -31,6 +31,8 @@
 
 # Can you see the bug? I couldn't!
 # After a bit of a skim, Angus noted I'd tripped up on a trap for young players
+# Turns out my last minute the code for my pretty lights
+# trying to iterate pass the end of an array corrupts your memory
 
 -- [font=monospace 50px][text-align=left][no-markup]
     for(i = 0; i < NUM_LEDS; i++) {
@@ -39,8 +41,7 @@
         FastLED.show();
     }
 
-# Turns out my last minute the code for my pretty lights
-# trying to iterate pass the end of an array corrupts your memory
+# A one character change and it was fixed!
 
 -- [images/v1-flash.jpg]
 
