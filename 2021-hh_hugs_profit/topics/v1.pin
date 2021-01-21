@@ -9,9 +9,10 @@
 # *pause* *breath* *slow down*
 
 -- [images/v1-pillowhug.png]
-# Quick tangent, whilst writing the initial code, I learned whilst hugging a pillow in my dorm at 1am
+# Quick tangent, when I was writing the initial code, I learned whilst hugging a pillow in my dorm at 1am
 # because waking up a delegate for a hug seemed like a bad idea
 # hugging becomes intimate extremely fast, somewhere between 700 and 1000ms in fact.
+# So my lazy first attempt with a 5 second timeout, required more thought
 
 -- [images/v1.jpg]
 # After visiting LT at the Front desk, who seemed quite perplexed at my request for an extra badge holder
@@ -44,7 +45,8 @@
 # A one character change and it was fixed!
 
 -- [images/v1-flash.jpg]
-
+# and I flashed the fix whilst watching another presentation
 # Whilst the badge was extremely unreliable
 # It generated interactions with an ease I didn't think possible
-# Not only that, the energy, people
+# Not only that, the energy and people I encountered was overwhelming
+# in the best kind of way
