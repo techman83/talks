@@ -1,14 +1,83 @@
+-- [images/whimsy-1.jpg]
+# Well on the more whimsical front, purchasing big blowers
+# *slight pause*
+
+-- [images/whimsy-2.jpg]
+# building battery packs
+# *slight pause*
+
+-- [images/whimsy-3.jpg]
+# making noise boxes
+# *slight pause*
+
+-- [images/whimsy-4.jpg]
+# to chase my friends around in a T-Rex suit
+# that maintained optimal comical floppiness for up to 14 hours
+# *longer pause*
+# to the less whimsical
+
+-- [images/more-1.jpg]
+# Building presence sensors for my office 
+# *slight pause*
+
+-- [images/more-2.jpg]
+# IoT Control over my former workplaces gate
+# Which started because I was sick of not having a remote and calling people
+# and was used by the majority of the staff by time I left 
+# *slight pause*
+
+-- [images/more-3.jpg]
+# Motion / Temperature sensors and Mood lighting for my
+# *slight pause*
+# Actually, that might be still mostly whimsical
+
+-- [images/more-4.png]
+# Flashing off the shelf lights with Tasmota 
+# *slight pause*
+
+-- [images/more-5.jpg]
+# Building a prototype sensor board for my house 
+# *slight pause*
+
+-- [images/more-6.png]
+# Contributing to Tasmota to fix a broken driver
+# *slight pause*
+
+-- [images/more-7.png]
+# Filling my house with IoT devices 
+# *slight pause*
+
+-- [images/more-8.jpg]
+# And even building my own custom circuit boards
+# *slight pause*
+
 -- [images/happyjeb.jpg]
-# What did I learn from all this?
+# At the beginning of this talk I mentioned not being able to integrate with a sensor,
+# finishing up with contributing to open source, compiling my own custom Tasmota based firmware 
+# and even designing and getting my own circuit boards manufactured!
 
-# 
+# If socialising is a challenge for you, find something you're into and lean into it
+# there will be others who are intrigued, interested or even into the same things!
 
+# I also want to give a bit of a shout out to 
+# Opal for being my top cod contributor and metric wise, likely my top hugger
+# Angus Gratton for taking the time to help me with my code
+# Mark Wolfe for helping me out when I squared C seemed beyond me
+# And all of you. Your enthusiasm, your questions, your interest helped me
+# reconnect with a world that I had long felt disconnected from.
 
-# - In closing, I'd like to give a huge shout out to Opal as both my top code contributor AND top hugger.
-# - Also If socialising is a challenge for you, don't be afraid to find your own way to express your brand
-# - because you'll find others just exited in whatever it may be as you
+# Last but not least Jon, Andy for giving me a chance to embellish in my whimsy
+
 -- [images/smoke.png]
 # - lastly, always make sure you get your wiring correct. Lest you at 1am, let the smoke out of your just completed badge
 
-# Talk about the interactions with others
-# Angus, Mark Wolfe
+--
+
+    Hacking Hardware for Hugs and Profit!
+
+CC-BY
+Leon Wright - DevOps Engineer @ Pet Circle (We're hiring!)
+
+GH: @techman83 
+T: @techman_83 
+W: techman83.me
