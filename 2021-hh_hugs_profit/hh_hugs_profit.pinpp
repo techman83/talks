@@ -13,4 +13,5 @@
 @include <v1.pin>
 @include <v2.pin>
 @include <v3.pin>
+@include <v4.pin>
 @include <closing.pin>

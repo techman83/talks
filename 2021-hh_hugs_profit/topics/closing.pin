@@ -1,5 +1,20 @@
+-- [images/this-is-fine.jpg]
+# So beyond stabbing my fingers many times, what other problems have I had?
+
+# - Soldering bread board wires through badges works great, until
+#   you get a set that don't seem to take solder and you lack flux
+# - People trying to "fake" a hug, I did add code to my algorithm to
+#   prevent invalid hugs!
+# - Building something for detecting hugs needs to be robust, people
+#   will try to get a high score by increasing the currently unmeasured
+#   'squeeze factor'
+# - Badges don't really make great circuit boards
+# - You can carry 150w of "spare" batteries on an international flight.
+#   which is quite a few lipo cells
+# - Fortunately no major fires
+
 -- [images/whimsy-1.jpg]
-# Well on the more whimsical front, purchasing big blowers
+# On the more whimsical front, this has sparked things like purchasing big blower fans
 # *slight pause*
 
 -- [images/whimsy-2.jpg]
@@ -51,16 +66,24 @@
 # And even building my own custom circuit boards
 # *slight pause*
 
--- [images/happyjeb.jpg]
-# At the beginning of this talk I mentioned not being able to integrate with a sensor,
-# finishing up with contributing to open source, compiling my own custom Tasmota based firmware 
+-- [images/more-9.jpg]
+# My current project is to add a PID controller and connect my coffee machine to my
+# home automation!
+# *slight pause*
+
+-- [images/my-gear.jpg]
+# At the beginning of this talk I mentioned not being able to integrate with a sensor, and pictured
+# was until the last couple of years the extent of my gear, a soldering iron that I've had for 20 
+# years and a dmm made in the late 70s my Dad bought me when I was a kid.  
+
+# To now, contributing to open source, compiling my own custom Tasmota based firmware 
 # and even designing and getting my own circuit boards manufactured!
 
 # If socialising is a challenge for you, find something you're into and lean into it
 # there will be others who are intrigued, interested or even into the same things!
 
 # I also want to give a bit of a shout out to 
-# Opal for being my top cod contributor and metric wise, likely my top hugger
+# Opal for being my top code contributor and metric wise, likely my top hugger
 # Angus Gratton for taking the time to help me with my code
 # Mark Wolfe for helping me out when I squared C seemed beyond me
 # And all of you. Your enthusiasm, your questions, your interest helped me
