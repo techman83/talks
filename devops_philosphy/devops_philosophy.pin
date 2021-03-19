@@ -1,0 +1,243 @@
+#!/usr/bin/pinpoint
+
+[font=Sans 200px]
+[white][text-color=black]
+[shading-opacity=0.0]
+[text-align=center]
+[duration=17]
+[images/pc-logo-corner.png]
+
+--
+
+    The Philosophy of DevOps
+
+CC-BY
+Leon Wright
+
+# !!!!! Remember, Talk slower. Everything seems slower than it actually is!
+
+# Before you start
+#  - Tidy your surroundings
+#  - Adjust pinpoint window size
+#  - Get comfortable - you're sitting at a desk!
+#  - Don't bang the table!
+#  - Take a deep breath
+# OBS
+#  - F2 My face
+#  - F3 pip
+#  - F4 presentation 
+
+
+# There is a lot in this presentation, I've left time for questions to avoid getting sidetracked
+# I finished writing this an hour ago, bear with me! You're all my guinea pigs as I'll probably turn this into a conference talk!
+# 
+# Most gotten to know me, but maybe not my background
+
+--
+# Switch screens
+
+# Background - No formal education beyond a Tafe Certificate that was barely relevant.
+# Started at a School - 2003 - Technician
+# - 100 students, 20 staff, 1 tech person, part time
+# - optimised laptop imaging processes to make support easier
+#
+# Mining Supplies Company - Sys Admin
+# - 700 non-tech staff, spread around the globe, 5 tech staff (CTO, Senior Sys Admin, Sys Admin, 2 technicians)
+# - optimised laptop imaging process, so remote staff could rebuild machines
+# - lots of systems Automation
+#
+# Corporate ISP Startup - Software Dev -> DevOps Engineer
+# - Hired to write PBX Integration code
+# - Automated deployment/updates of nearly 100 cloud PBXs
+# - moved on to integrating applications
+# - Included:
+# Elastic Search Cluster - Centralised Logging
+# Centralised/Redundant Carrier call routing - managing 100,000 calls week
+# Ability to track, about half a million individual voip calls down to the sip packet level from the prior 14 days
+--
+# Non Employment experience
+#
+# User Group / Conference AV team
+# Live Streaming talks from 2007 -> 2015
+# Conference AV Volunteer 2013 -> 2015
+# Conference AV Team Lead in 2014 - Wrote the systems management code
+# First Linux Conf to have videos out before the end of the conference
+#
+# Infrastructure Team Lead - CKAN
+# Used by > 100,000 people
+# Indexing taken from shell scripts -> Perl Monolith -> Decoupled DevOps Project
+# The devs now look after the project, I'm just involved for major changes
+# and infrastructure changes that
+# I have a whole talk on that journey
+
+-- [images/confused.jpg]
+# Switch screens
+# What on earth is DevOps?
+# Go through answers / ask audience
+
+-- [images/belt-fire.jpg]
+
+# A lot of what "DevOps" is portrayed, is a way to sell something
+# I'll start with what it isn't
+
+# - Cloud
+# - Automation
+# - Monitoring
+# - Alerting
+# - Testing
+
+# These are just tools--
+-- [images/culture_cat.jpg]
+
+# DevOps is a Culture - What do I mean?
+-- [font=monospace 50px][text-align=left]
+People
+    * Collaboration
+    * Combining Expertise
+        * Developers + code
+        * Ops
+    * Working Together
+
+-- [font=monospace 50px][text-align=left]
+Empathy
+    * Taking Ownership
+    * Expecting/Allowing Failure
+    * Goal Orientated
+
+# Ownership
+# - you aren't relying on anyone else for your changes
+# - you get immediate feedback
+# Failure
+# - Reduces fear of failure, easier to fix
+# Goal Orientated
+# - Goals can be more achievable
+# - Ability to focus on specifics
+
+-- [font=monospace 50px][text-align=left] 
+Empowerment
+    * Deployments become part of 
+      the Development Process
+    * Developers to make smaller 
+      changes
+    * Operations freed up to build 
+      tooling to empower developers
+    * Operations focus on reliability
+      instead of deployment
+
+# Talk about why small changes are good
+# - Easier debugging
+# - Trialling features
+# - smaller impacts when something doesn't work
+# - lower barrier for onboarding
+
+-- [font=monospace 50px][text-align=left]
+Process
+    * Understanding the Requirements
+    * Simplifying Processes
+    * Limited Change Scope
+
+# Because not based around big releases or trying to squeeze this in
+# Our tasks can be smaller, requirements tighter and easier to understand
+
+-- [images/important_dogs.png]
+# Why is it important
+#
+# Quote - Paul Graham - Beating the Averages (recommend reading)
+
+-- 
+A company that gets software written faster and better will, all other things being equal, put its competitors out of business. 
+
+    Paul Graham, Beating the Averages - http://www.paulgraham.com/avg.html
+
+# Get past the lisp + outdated languages, it's still relevant
+
+# Competitor hostility aside, the quicker we can get changes out to customers, the faster we can improve their experience and empower them more efficiently get the things they need for their furry family members.
+-- [images/megabite.jpg]
+
+# Automation is important right?
+
+# Automation is a goal, not a foundation
+
+# Awkward processes that are automated are
+# almost worse, because
+
+
+-- [font=monospace 50px][text-align=left]
+
+* Change is still hard
+* Processes are still fragile
+* They require careful supervision
+* Are harder to fault find
+* Often require perfection
+
+# Change hard: Changes require thorough testing
+# Fragile Processes: Often require frequent change
+# Careful supervision: Personally I don't want to think about something working, it should just work!
+# Fault finding: Automated processes, especially complex ones, where did it go wrong?
+# Perfection: Perfection is impossible, any attempt is time consuming and often not required to get the job done
+
+-- [images/give-it-a-try-right-meow.jpg]
+# All that aside, what can we do to live this philosophy?
+#
+# Infra as Code is an excellent goal, but it is made harder without addressing complexity
+#
+# How can we reduce this?
+
+-- [font=monospace 50px][text-align=left]
+
+* Independent Packaging Processes
+
+# Independent - What?
+# Our packaging should involve creating a self contained artifact.
+# This simplifies machine image build processes
+
+-- [font=monospace 50px][text-align=left]
+
+* Independent Packaging Processes
+* Self contained code / Services
+
+# Self contained
+# Further Simplifies our builds
+# Simplifies running the code
+# Ensures we're not relying on system nuances
+# Forces us to think outside the box and rely on services beyond running a server for stuff that could be better served within our cloud environment
+# buckets - queues - network file systems etc
+
+-- [font=monospace 50px][text-align=left]
+
+* Independent Packaging Processes
+* Self contained code / Services
+* Immutable Instances
+
+# Immutable instances
+# I know we're a pet company, but our instances shouldn't be pets!
+# They should be as insignificant as the grass our cows eat. Grass goes bad? Change paddocks!
+# The code we run in dev, in test, in production shouldn't change!
+# Each environment should provide differences during runtime
+# Why is this important? 
+# Less scope for environment specific problems
+# Easier debugging due to consistency between environments
+# Instances can be abandoned for deeper investigation, rather than trying to do it in prod
+
+-- [font=monospace 50px][text-align=left]
+
+* Independent Packaging Processes
+* Self contained code / Services
+* Immutable Instances
+* Strong Contracts between Services
+
+# Strong contracts? What do I mean?
+# My service should provide strong guarantees that 
+# it will handle valid inputs consistently
+# the outputs will be completed consistently
+#
+# why is it important?
+# It means things can be optimised and improved independently
+# Forces backwards/forwards compatibility
+# Allows work to be focused and empowers the ability to make changes
+# Decoupled code is easier to deploy and manage
+
+-- [images/i-love-talking-talkings-my-favorite.jpg]
+
+# I've talked a lot, time for some questions!--
+

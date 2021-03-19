@@ -1,0 +1,88 @@
+-- [images/megabite.jpg]
+
+# Automation is important right?
+
+# Automation is a goal, not a foundation
+
+# Awkward processes that are automated are
+# almost worse, because
+
+
+-- [font=monospace 50px][text-align=left]
+
+* Change is still hard
+* Processes are still fragile
+* They require careful supervision
+* Are harder to fault find
+* Often require perfection
+
+# Change hard: Changes require thorough testing
+# Fragile Processes: Often require frequent change
+# Careful supervision: Personally I don't want to think about something working, it should just work!
+# Fault finding: Automated processes, especially complex ones, where did it go wrong?
+# Perfection: Perfection is impossible, any attempt is time consuming and often not required to get the job done
+
+-- [images/give-it-a-try-right-meow.jpg]
+# All that aside, what can we do to live this philosophy?
+#
+# Infra as Code is an excellent goal, but it is made harder without addressing complexity
+#
+# How can we reduce this?
+
+-- [font=monospace 50px][text-align=left]
+
+* Independent Packaging Processes
+
+# Independent - What?
+# Our packaging should involve creating a self contained artifact.
+# This simplifies machine image build processes
+
+-- [font=monospace 50px][text-align=left]
+
+* Independent Packaging Processes
+* Self contained code / Services
+
+# Self contained
+# Further Simplifies our builds
+# Simplifies running the code
+# Ensures we're not relying on system nuances
+# Forces us to think outside the box and rely on services beyond running a server for stuff that could be better served within our cloud environment
+# buckets - queues - network file systems etc
+
+-- [font=monospace 50px][text-align=left]
+
+* Independent Packaging Processes
+* Self contained code / Services
+* Immutable Instances
+
+# Immutable instances
+# I may work for a pet company, but you shouldn't treat servers like pets!
+# They should be as insignificant as the grass our cows eat. Grass goes bad? Change paddocks!
+# The code we run in dev, in test, in production shouldn't change!
+# Each environment should provide differences during runtime
+# Why is this important? 
+# Less scope for environment specific problems
+# Easier debugging due to consistency between environments
+# Instances can be abandoned for deeper investigation, rather than trying to do it in prod
+
+-- [font=monospace 50px][text-align=left]
+
+* Independent Packaging Processes
+* Self contained code / Services
+* Immutable Instances
+* Strong Contracts between Services
+
+# Strong contracts? What do I mean?
+# My service should provide strong guarantees that 
+# it will handle valid inputs consistently
+# the outputs will be completed consistently
+#
+# why is it important?
+# It means things can be optimised and improved independently
+# Forces backwards/forwards compatibility
+# Allows work to be focused and empowers the ability to make changes
+# Decoupled code is easier to deploy and manage
+
+-- [images/i-love-talking-talkings-my-favorite.jpg]
+
+# I've talked a lot, time for some questions!

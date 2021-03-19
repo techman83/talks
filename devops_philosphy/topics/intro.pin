@@ -1,0 +1,76 @@
+    The Philosophy of DevOps
+
+CC-BY
+Leon Wright
+
+# !!!!! Remember, Talk slower. Everything seems slower than it actually is!
+
+# Before you start
+#  - Tidy your surroundings
+#  - Adjust pinpoint window size
+#  - Get comfortable - you're sitting at a desk!
+#  - Don't bang the table!
+#  - Take a deep breath
+# OBS
+#  - F2 My face
+#  - F3 pip
+#  - F4 presentation 
+
+#
+# Introduce myself
+# A bit of a bit about my background background
+
+--
+# Switch screens
+
+# Background - No formal education beyond a Tafe Certificate that was barely relevant.
+# Started at a School - 2003 - Technician
+# - 100 students, 20 staff, 1 tech person, part time
+# - optimised laptop imaging processes to make support easier
+#
+# Mining Supplies Company - Sys Admin
+# - 700 non-tech staff, spread around the globe, 5 tech staff (CTO, Senior Sys Admin, Sys Admin, 2 technicians)
+# - optimised laptop imaging process, so remote staff could rebuild machines
+# - lots of systems Automation
+#
+# Corporate ISP Startup - Software Dev -> DevOps Engineer
+# - Hired to write PBX Integration code
+# - Automated deployment/updates of nearly 100 cloud PBXs
+# - moved on to integrating applications
+# - Included:
+# Elastic Search Cluster - Centralised Logging
+# Centralised/Redundant Carrier call routing - managing 100,000 calls week
+# Ability to track, about half a million individual voip calls down to the sip packet level from the prior 14 days
+--
+# Non Employment experience
+#
+# User Group / Conference AV team
+# Live Streaming talks from 2007 -> 2015
+# Conference AV Volunteer 2013 -> 2015
+# Conference AV Team Lead in 2014 - Wrote the systems management code
+# First Linux Conf to have videos out before the end of the conference
+#
+# Infrastructure Team Lead - CKAN
+# Used by > 100,000 people
+# Indexing taken from shell scripts -> Perl Monolith -> Decoupled DevOps Project
+# The devs now look after the project, I'm just involved for major changes
+# and infrastructure changes that
+# I have a whole talk on that journey
+
+-- [images/confused.jpg]
+# Switch screens
+# What on earth is DevOps?
+# Go through answers / ask audience
+
+-- [images/belt-fire.jpg]
+
+# A lot of what "DevOps" is portrayed, is a way to sell something
+# I'll start with what it isn't
+
+# - Cloud
+# - Automation
+# - Monitoring
+# - Alerting
+# - Testing
+
+# These are just tools

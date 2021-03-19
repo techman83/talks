@@ -1,0 +1,65 @@
+-- [images/culture_cat.jpg]
+
+# DevOps is a Culture - What do I mean?
+-- [font=monospace 50px][text-align=left]
+People
+    * Collaboration
+    * Combining Expertise
+        * Developers + code
+        * Ops
+    * Working Together
+
+-- [font=monospace 50px][text-align=left]
+Empathy
+    * Taking Ownership
+    * Expecting/Allowing Failure
+    * Goal Orientated
+
+# Ownership
+# - you aren't relying on anyone else for your changes
+# - you get immediate feedback
+# Failure
+# - Reduces fear of failure, easier to fix
+# Goal Orientated
+# - Goals can be more achievable
+# - Ability to focus on specifics
+
+-- [font=monospace 50px][text-align=left] 
+Empowerment
+    * Deployments become part of 
+      the Development Process
+    * Developers to make smaller 
+      changes
+    * Operations freed up to build 
+      tooling to empower developers
+    * Operations focus on reliability
+      instead of deployment
+
+# Talk about why small changes are good
+# - Easier debugging
+# - Trialling features
+# - smaller impacts when something doesn't work
+# - lower barrier for onboarding
+
+-- [font=monospace 50px][text-align=left]
+Process
+    * Understanding the Requirements
+    * Simplifying Processes
+    * Limited Change Scope
+
+# Because not based around big releases or trying to squeeze this in
+# Our tasks can be smaller, requirements tighter and easier to understand
+
+-- [images/important_dogs.png]
+# Why is it important
+#
+# Quote - Paul Graham - Beating the Averages (recommend reading)
+
+-- 
+A company that gets software written faster and better will, all other things being equal, put its competitors out of business. 
+
+    Paul Graham, Beating the Averages - http://www.paulgraham.com/avg.html
+
+# Get past the lisp + outdated languages, it's still relevant
+
+# Competitor hostility aside, the quicker you can get changes out to customers/users, the faster we can improve their experience and empower them
